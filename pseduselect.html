@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sliding menu css</title>
+    <style>
+        /* reset css*/
+        body{
+            margin: 0;
+            
+        }
+        ul{
+            margin: 0;
+            list-style: none;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        /*styling*/
+        body{
+            background-color: burlywood;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #menu{
+            background-color: cadetblue;
+            width: 150px;
+            border-right: 6px solid #333;
+            margin-left: -150px;
+        }
+        a{
+            color: thistle;
+        }
+        li{
+            padding: 10px;
+           border-bottom: 1px solid #333;
+        }
+        /*pseudoselect*/
+        li:last-child{
+            border-bottom: none;
+        }
+        li:hover{
+            background-color: rosybrown;
+        }
+        #menu:hover{
+            margin-left: 0;
+        }
+        li::before{
+            content:"\2714"
+        }
+        li::after{
+            content: "\2022\2022\2022"
+        }
+    </style>
+</head>
+<body>
+    <nav id="menu">
+        <ul>
+            <li><a href="">Lorem</a></li>
+            <li><a href="">Esse</a></li>
+            <li><a href="">Minima</a></li>
+            <li><a href="">Veritatis</a></li>
+            <li><a href="">Officiis</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
